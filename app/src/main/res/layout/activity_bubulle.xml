@@ -19,14 +19,20 @@
             android:layout_width="179dp"
             android:layout_height="wrap_content"
             android:text="Play"
-            android:id="@+id/button"
+            android:id="@+id/button_play"
             android:layout_gravity="center_horizontal" />
 
         <Button
             android:layout_width="179dp"
             android:layout_height="wrap_content"
             android:text="Statistics"
-            android:id="@+id/button2"
+            android:id="@+id/button_stats"
+            android:layout_gravity="center_horizontal" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView"
             android:layout_gravity="center_horizontal" />
     </LinearLayout>
 </RelativeLayout>

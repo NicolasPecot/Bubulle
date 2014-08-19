@@ -20,7 +20,7 @@ public class HelloActivity extends Activity {
         Intent intent = getIntent();
         TextView myName = (TextView) findViewById(R.id.txtHello);
         if (intent != null) {
-            myName.setText(getResources().getString(R.string.bonjour) + intent.getStringExtra(txtHello));
+            myName.setText(getResources().getString(R.string.bonjour)+ " " + intent.getStringExtra(txtHello));
         }
     }
 

@@ -6,11 +6,13 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 public class Bubulle extends Activity {
 
-    public static final String EXTRA_MESSAGE = "@string/bounjour";
+    public static final String EXTRA_MESSAGE = "message";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,9 +39,14 @@ public class Bubulle extends Activity {
 
     // Called when the user clicks on "Validate name" button
     public void displayHello(View view) {
-        Intent intent = new Intent(this, DisplayMessageActivity.class); // TODO A CHANGER
+
+        TextView txtname = (TextView) findViewById(R.id.editText);
+        Button button = (Button) findViewById(R.id.button_hello);
+
+        Intent helloIntent = new Intent(Bubulle.this, HelloActivity.class); // TODO bon ?
         EditText editText = (EditText) findViewById(R.id.editText);
         String message = editText.getText().toString();
-        intent.putExtra(EXTRA_MESSAGE, message);
+        helloIntent.putExtra(EXTRA_MESSAGE, message);
+        startActivity(helloIntent);
     }
 }

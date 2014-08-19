@@ -6,5 +6,6 @@
     <string name="action_settings">Settings</string>
     <string name="bonjour">Bonjour </string>
     <string name="valid_name">Validate name</string>
+    <string name="title_activity_hello">HelloActivity</string>
 
 </resources>
